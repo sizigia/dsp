@@ -55,7 +55,7 @@ In the Terminal:
 
 `python3 --version`
 
->> Python 3.6.8
+>> Python 3.8.3
 
  
 
