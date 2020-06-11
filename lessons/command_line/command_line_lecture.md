@@ -68,7 +68,8 @@ cd test_directory
 This "changes directory" and makes the named directory our new working
 directory. 
 
-> Question: How could we make sure that we moved?
+> *Question: How could we make sure that we moved?*  
+> ```pwd```
 
 Let's get a few special things out of the way as well for command line. When
 we talk about folders, we don't always want to move "into" the next folder
@@ -118,7 +119,8 @@ echo "HELLO WORLD" > test_file.txt
 Now nothing shows up on the screen. List the files and see if you can tell
 why.
 
-> Hint: we learned how to list all the files up above.
+> *Hint: we learned how to list all the files up above.*  
+>  ```ls```
 
 The greater than says, "put that output into the following file instead."
 
@@ -143,8 +145,8 @@ installed. Just swap in `wget` any place you see `curl`)_
 This prints the data directly to stdout and we can see the whole dataset.
 Nice. 
 
-> Let's save the output of the `curl` command to a file called `data.txt`. How
-would we do that?
+> *Let's save the output of the `curl` command to a file called `data.txt`. How would we do that?*  
+> ```curl``` *```url```* **```> data.txt```**
 
 Now that we have the data file, let's learn how to manipulate files.
 
@@ -191,7 +193,8 @@ We can get even fancier by adding a second flag
 ls -lh
 ```
 
-> What changed?
+> *What changed?*  
+> When used with the **-l** option, **-h** shows file sizes in human readable format (Byte, Kilobyte, Megabyte, Gigabyte, Terabyte and Petabyte in order to reduce the number of digits to three or less using base 2 for sizes).
 
 If instead copying we just want to change the name of a file, we can do:
 
