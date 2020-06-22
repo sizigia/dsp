@@ -101,7 +101,7 @@ done
 ```
 > Heads up: You may have to swap in `wget` for `curl` in your version
 
-The first line tells the terminal to execute this as a BASH script. This is called a 'shebang' for reasons I have no idea about. Then this code loops through 10 times (`seq 0 10` is sequence from 0 to 10), and does whatever is in the `do`-`done` loop. In this case, it runs a `curl` and pushes the data into a text file. Note the `data$i.txt`. The dollar sign is BASH for "thi  is a variable name I want you to unpack."
+The first line tells the terminal to execute this as a BASH script. This is called a 'shebang' for reasons I have no idea about. Then this code loops through 10 times (`seq 0 10` is sequence from 0 to 10), and does whatever is in the `do`-`done` loop. In this case, it runs a `curl` and pushes the data into a text file. Note the `data$i.txt`. The dollar sign is BASH for "this is a variable name I want you to unpack."
 
 If I run this with `bash load_data_batches.sh`, then I run `ls` and see that I
 have data in 11 different files now!
@@ -231,7 +231,7 @@ find ./folder_name/*  -type f -mtime +9 -print
 ```
 
 This checks all the files inside of `folder_name` if they are not directories
-(`-type f`) and if their last moodified time is more than 9 days `-mtime +9`
+(`-type f`) and if their last modified time is more than 9 days `-mtime +9`
 and then prints them. You can chain this with other things and modify just
 those files that pass this find command using a pipe. So for instance if I
 want to find files older than 9 days that contain the word "steve":
